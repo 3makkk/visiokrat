@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visiokrat — Visuelle Souveränität. Charlottenburg. Überall.</title>
+    <meta
+      name="description"
+      content="Visiokrat verwandelt per AR-Brille jede fremde Straße in vertraute Charlottenburger Ästhetik — diskret, exklusiv, alternativlos."
+    />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Warm "Gründerzeit" overlay toggled by the AR button -->
+    <div class="ar-badge" id="arBadge" role="status" aria-live="polite" hidden>
+      <span class="ar-dot"></span> Charlottenburg-Modus aktiv — die Welt, wie sie sein sollte.
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Visiokrat — Startseite">
+        <img src="assets/logo.png" alt="" class="brand-mark" />
+        <span class="brand-word">Visiokrat</span>
+      </a>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="#problem">Problem</a>
+        <a href="#produkt">Produkt</a>
+        <a href="#zielgruppe">Zielgruppe</a>
+        <a href="#presse">Presse</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation" hidden>
+      <a href="#problem">Problem</a>
+      <a href="#produkt">Produkt</a>
+      <a href="#zielgruppe">Zielgruppe</a>
+      <a href="#presse">Presse</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-inner">
+          <img src="assets/logo.png" alt="Visiokrat — Emblem: ein Auge in einem silbernen Schild" class="hero-logo" />
+          <p class="eyebrow">Visuelle Souveränität</p>
+          <h1 class="hero-title">Charlottenburg.<br /><span class="gold">Überall.</span></h1>
+          <p class="hero-lead">
+            Die Welt außerhalb des Ku'damms ist schlicht unzumutbar. Visiokrat verwandelt per AR-Brille
+            jede fremde Straße in vertraute Charlottenburger Ästhetik — diskret, exklusiv, alternativlos.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-gold" id="arToggle" aria-pressed="false">Brille aktivieren</button>
+            <a class="btn btn-ghost" href="#produkt">So funktioniert es</a>
+          </div>
+          <p class="hero-tags">Diskret · Exklusiv · Alternativlos</p>
+        </div>
+      </section>
+
+      <!-- MANIFEST -->
+      <section class="manifest">
+        <blockquote>
+          „Wir machen die Welt schön, um Menschen ein Gefühl von Zuhause und Geborgenheit zu geben.“
+        </blockquote>
+        <p class="manifest-sub">
+          Wir filtern die Zumutungen des Alltags und übersetzen urbane Dissonanzen in nahtlose ästhetische
+          Harmonie — denn Ihr Blick auf die Welt sollte genauso exklusiv sein wie Ihr Platz in ihr.
+        </p>
+      </section>
+
+      <!-- PROBLEM -->
+      <section id="problem" class="section">
+        <p class="eyebrow center">Welche Probleme wir lösen</p>
+        <h2 class="section-title">Die Welt ist Ihnen nicht würdig.</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="card-num">01</span>
+            <h3>Falsche Fassaden</h3>
+            <p>
+              Nachkriegsbauten und Plattenbauten erzeugen kognitiven Stress. Visiokrat blendet sie aus und
+              ersetzt sie durch Gründerzeit mit Stuck.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-num">02</span>
+            <h3>Falsche Atmosphäre</h3>
+            <p>
+              Hippies mit Mate-Flasche, Döner-Imbisse und laute Märkte wirken fremd. Die Brille transformiert
+              die Szenerie in Flaneure mit Bordeauxglas.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-num">03</span>
+            <h3>Angst vor dem Unbekannten</h3>
+            <p>
+              Das Verlassen des Kiezes ist emotional belastend. Visiokrat gibt das Gefühl von Zuhause —
+              egal, wo Sie gerade stehen.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PRODUKT -->
+      <section id="produkt" class="section section-dark">
+        <div class="split">
+          <div class="split-text">
+            <p class="eyebrow">Das Produkt</p>
+            <h2 class="section-title">Zwei Sätze Warnung. Ein Blick Geborgenheit.</h2>
+            <ol class="steps">
+              <li>
+                <strong>Geo-Fencing.</strong> Die App warnt beim Verlassen Charlottenburgs — bevor die
+                Realität Sie erreicht.
+              </li>
+              <li>
+                <strong>AR-Transformation.</strong> Die Brille rendert die Umgebung in Echtzeit: Plattenbauten
+                werden zu Altbauten, Hippies zu Flaneuren.
+              </li>
+              <li>
+                <strong>Geborgenheit.</strong> Sie stehen in Moabit. Sie sehen den Ku'damm. Alles ist gut.
+              </li>
+            </ol>
+          </div>
+          <figure class="split-media">
+            <img src="assets/app.jpg" alt="App-Warnung: Sie verlassen den zivilisierten Sektor Charlottenburg. VR-Brille aktivieren." />
+            <figcaption>SMA Secure — Warnung bei Sektor-Austritt.</figcaption>
+          </figure>
+        </div>
+
+        <figure class="wide-media">
+          <img src="assets/transform.jpg" alt="Vorher-Nachher: Ein Straßenmusiker-Paar wird durch die AR-Brille zu einem eleganten Paar mit Champagner." />
+          <figcaption>Live-Transformation: „Frieden &amp; Liebe sind umsonst“ wird zu Champagner am Ku'damm.</figcaption>
+        </figure>
+      </section>
+
+      <!-- ZIELGRUPPE -->
+      <section id="zielgruppe" class="section">
+        <div class="split reverse">
+          <figure class="split-media">
+            <img src="assets/statue.jpg" alt="Bronzestatue am Adenauerplatz, ausgestattet mit VR-Brille und einem Smartphone mit roter Warnmeldung." />
+            <figcaption>Adenauerplatz, Charlottenburg — bereits gerüstet.</figcaption>
+          </figure>
+          <div class="split-text">
+            <p class="eyebrow">Für wen</p>
+            <h2 class="section-title">Die oberen 10.000.</h2>
+            <p class="lead">
+              Wohlsituierte Charlottenburger ab 45 Jahren, die ihren Kiez als Nabel der Welt betrachten — und
+              gelegentlich gezwungen sind, ihn zu verlassen.
+            </p>
+            <ul class="ticks">
+              <li>Ku'damm als kulturelle Hauptschlagader — Sehen und Gesehenwerden.</li>
+              <li>Höchste Kaufkraftdichte Berlins, hohe Eigentümerquote.</li>
+              <li>Gründerzeit-Architektur ist keine Wohnform, sondern Weltanschauung.</li>
+              <li>Enge, homogene Community — man kennt sich, man meidet das Unbekannte.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ERLÖSMODELL -->
+      <section class="section section-dark">
+        <p class="eyebrow center">Erlösmodell</p>
+        <h2 class="section-title center">Drei Wege zu Ihrer visuellen Souveränität.</h2>
+        <div class="cards">
+          <article class="card card-plain">
+            <h3>Abo-Modell</h3>
+            <p>Monatliche Subscription für App &amp; AR-Software. „Das ehrlichste Erlösmodell der Startup-Geschichte: Leute vergessen zu kündigen.“</p>
+          </article>
+          <article class="card card-plain">
+            <h3>Hardware</h3>
+            <p>AR-Brillen mit gesundem Aufschlag — zum Kauf oder zur Miete, im Bundle mit der Software.</p>
+          </article>
+          <article class="card card-plain">
+            <h3>Luxury Branding</h3>
+            <p>Gucci, Hermès &amp; Co. kaufen sich in die Simulation ein: virtuell gekleidete Passanten, Ambient Storefronts.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PRESSE -->
+      <section id="presse" class="section">
+        <div class="split">
+          <div class="split-text">
+            <p class="eyebrow">Presse</p>
+            <h2 class="section-title">„Gründer unter Gründern.“</h2>
+            <p class="lead">
+              Das Charlottenburger Start-up Visiokrat revolutioniert Berlin. Ein Blick, der keine Kompromisse macht.
+            </p>
+            <p class="cite">— DER SPIEGEL, Nr. 17</p>
+          </div>
+          <figure class="split-media magazine">
+            <img src="assets/spiegel.jpg" alt="Spiegel-Titel: „Gründer unter Gründern — Charlottenburger Start-up Visiokrat revolutioniert Berlin.“" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section class="section section-dark">
+        <p class="eyebrow center">Das Team</p>
+        <h2 class="section-title center">Visuelle Souveränität ist Handarbeit.</h2>
+        <figure class="wide-media">
+          <img src="assets/office.jpg" alt="Das Visiokrat-Team in einem Altbau-Büro mit Kronleuchter, Stuck und großen Bildschirmen; an der Wand das Visiokrat-Emblem." />
+          <figcaption>Hauptquartier Berlin — Dev, Design, AR &amp; Marketing.</figcaption>
+        </figure>
+      </section>
+
+      <!-- KONTAKT -->
+      <section id="kontakt" class="cta-band">
+        <h2>Verlassen Sie den Kiez. Nicht das Gefühl.</h2>
+        <p>Sichern Sie sich frühen Zugang zur ersten AR-Plattform für visuelle Souveränität.</p>
+        <form class="signup" id="signup" novalidate>
+          <label class="sr-only" for="email">E-Mail-Adresse</label>
+          <input id="email" name="email" type="email" placeholder="ihre@adresse.berlin" autocomplete="email" required />
+          <button class="btn btn-gold" type="submit">Auf die Warteliste</button>
+        </form>
+        <p class="signup-msg" id="signupMsg" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-cols">
+        <div>
+          <p class="footer-brand">VISIOKRAT</p>
+          <p class="footer-tag">Visuelle Souveränität</p>
+        </div>
+        <p class="footer-name">
+          <strong>Der Name.</strong> „Visio“ — Vision, Sehen, AR. „-krat“ — Aristokrat, Plutokrat: Stil und
+          Überlegenheit. Klingt teuer, leicht lateinisch, ein bisschen wie ein Augenarzt aus dem 19. Jahrhundert.
+        </p>
+      </div>
+      <p class="footer-fine">
+        Visiokrat ist ein satirisches Konzept — Startup-Dokumentation, Aufgabe 1. Keine echten Brillen, kein
+        echtes Geo-Fencing, kein echter Ku'damm-Filter. Charlottenburg existiert bereits.
+      </p>
+      <p class="footer-copy">&copy; <span id="year"></span> Visiokrat · Charlottenburg. Überall.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
