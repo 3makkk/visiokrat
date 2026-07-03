@@ -553,6 +553,69 @@ body.ar-on main {
   filter: sepia(0.12) saturate(1.05);
 }
 
+/* ---------- Steuertipp ---------- */
+.tax {
+  max-width: none;
+  background: var(--cream);
+}
+.tax-box {
+  max-width: 52rem;
+  margin: 0 auto;
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.tax-box::before {
+  content: "§";
+  position: absolute;
+  top: -0.4em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--serif);
+  font-size: 2.6rem;
+  color: var(--gold);
+  background: var(--paper);
+  padding: 0 0.4rem;
+  line-height: 1;
+}
+.tax-lead {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #3a3f48;
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+}
+.tax-grid {
+  display: grid;
+  gap: 1rem;
+}
+.tax-item {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  gap: 1.25rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  align-items: baseline;
+}
+.tax-key {
+  font-family: var(--serif);
+  color: var(--gold);
+  font-size: 1.15rem;
+}
+.tax-val {
+  color: #3a3f48;
+}
+.tax-fine {
+  margin: 1.75rem 0 0;
+  text-align: center;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--silver-dim);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 760px) {
   .site-nav {
@@ -570,6 +633,10 @@ body.ar-on main {
   .footer-cols {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  .tax-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
   }
 }
 
